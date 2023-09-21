@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,80 +10,197 @@ body{
 }
 
 /* navbar */
-.navbar-container{
-    width: auto;
-    background-color: #1f2937;
-    padding: 20px;
-    box-sizing: border-box;
+header {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding: 20px 15%;
+    background-color: #1f2937;
 }
 
-.navbar-logo {
-    flex: 1;
-    margin-left: 18%;
-}
-
-.a-navbar-logo {
+.header-logo {
+    cursor: pointer;
+    margin-right: auto;
     text-decoration: none;
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
 }
 
-.navbar-menu {
-    flex: 1;
+/* Tidak perlu menambah class pada tabel, cukup tambahkan li pada class ul */
+.header-nav-menu {
+    list-style: none;
 }
 
-.ul-navbar-menu {
-    display: flex;
+.header-nav-menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header-nav-menu li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    cursor: pointer;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.li-navbar-menu {
-    padding: 15px;
+.header-nav-menu li a:hover {
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+/* navbar-end */
+
+/* introduction */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1f2937;
+    flex-wrap: wrap;
+}
+
+.intro-left-col {
     list-style: none;
+    flex: 2;
 }
 
-.a-navbar-menu {
-    text-decoration: none;
-    color: #F9FAF8;
+.intro-left-col li {
+    padding: 5px;
 }
+/* intro-left-col li */
 
-/* About Me */
-.about-container {
- display: flex;
- justify-content: center;
- background-color: #1f2937;
- box-sizing: border-box;
- color: #F9FAF8;
-}
-
-.about-column.left {
-    padding: 20px;
-}
-
-.p-title {
+.alc-one {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-.p-paragraph {
+.alc-two {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.about-button {
+.alc-three {
     background-color: #3882f6;
-    color: white;
+    border: 0px solid;
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.about-column.right {
-    padding: 20px;
+.alc-three a {
+    color: white;
+    text-decoration: none;
 }
+
+.intro-right-col {
+    flex: 1;
+}
+/* introduction end */
+
+/* gallery */
+.gallery-header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15%;
+    flex-wrap: wrap;
+}
+
+.gallery-content li {
+    list-style: none;
+    padding: 10px;
+}
+
+.gallery-content li img {
+    width: 100%;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 20px;
+}
+
+.gallery-caption {
+    text-align: center;
+    height: fit-content;
+}
+/* Gallery end */
+
+/* about */
+.about-container {
+    background-color: #e5e7eb;
+    padding: 100px 250px 70px 250px;
+}
+
+.about-line {
+    text-align: justify;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.about-name {
+    text-align: right;
+    font-size: 20px;
+    color: #1f2937;
+    font-weight: bold;
+}
+/* about end */
+
+/* Contacts */
+.contact-container {
+    background-color: #3882f6;
+    margin: 5% 20% 5% 20%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    list-style: none;
+    color: #E5E7EB;
+    padding-left: 10px;
+}
+
+.ct-one {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color: #3882f6;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+/* Concacts end */
+
+/* footer */
+.footer-container {
+    background-color: #1f2937;
+    padding: 20px;
+    color: #e5e7eb;
+    text-align: center;
+}
+/* footer end */

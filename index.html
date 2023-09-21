@@ -8,30 +8,88 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar-container">
-        <div class="navbar-logo">
-            <a href="#" class="a-navbar-logo">Tiko Anthony</a>
-        </div>
-        <div class="navbar-menu">
-            <ul class="ul-navbar-menu">
-                <li class="li-navbar-menu"><a href="#" class="a-navbar-menu">About Me</a></li>
-                <li class="li-navbar-menu"><a href="#" class="a-navbar-menu">Gallery</a></li>
-                <li class="li-navbar-menu"><a href="#" class="a-navbar-menu">Contacts</a></li>
+    <!-- navbar -->
+    <header>
+        <a href="#introduction" class="header-logo">Tiko Anthony</a>
+        <nav>
+            <ul class="header-nav-menu">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About This Page</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <!-- navbar-end -->
     
-    <!-- About Me -->
-    <div class="about-container">
-        <div class="about-column left">
-            <p class="p-title">Welcome to my Gallery!</p>
-            <p class="p-paragraph">This is my photos gallery, enjoy!</p>
-            <button type="button" class="about-button">To Gallery</button>
-        </div>
-        <div class="about-column right">
+    <!-- Introduction -->
+    <div class="intro-container" id="Introduction">
+        <ul class="intro-left-col">
+            <li class="alc-one">Welcome to my Website!</li>
+            <li class="alc-two">Hi, my name is Tiko Anthony and this is my gallery, I'd like to taking picture and editing my picture and this website contain some of my picture collections. please enjoy!</li>
+            <li><button type="button" class="alc-three"><a href="https://github.com/tikoanthony">My Github</a></button></li>
+        </ul>
+        <div class="intro-right-col">
             <img src="./assets/gambar1.jpg" alt="Banner" style="width:270px;height:400px;">
         </div>
     </div>
+    <!-- Introduction end -->
+
+    <!-- Gallery -->
+    <div class="gallery-header" id="gallery">My Gallery</div>
+
+    <ul class="gallery-content">
+        <li>
+            <img src="./assets/gambar2.jpg">
+            <div class="gallery-caption">
+                Salak Mountain view
+            </div>
+        </li>
+        <li>
+            <img src="./assets/gambar3.jpg">
+            <div class="gallery-caption">
+                Some random Road
+            </div>
+        </li>
+        <li>
+            <img src="./assets/gambar4.jpg">
+            <div class="gallery-caption">
+                Sawarna Beach
+            </div>
+        </li>
+        <li>
+            <img src="./assets/gambar5.jpg">
+            <div class="gallery-caption">
+                Tamansari Park
+            </div>
+        </li>
+    </ul>
+    <!-- Gallery end -->
+
+    <!-- About -->
+    <div class="about-container" id="about">
+        <div class="about-line">
+            This webpage still under construction because I have no idea what contain must I added here. If you have an idea, please let me know by clicking my contact below. Thank you!
+        </div>
+        <div class="about-name">
+            -Tiko Anthony, Somebody
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Contacts -->
+    <div class="contact-container" id="contact">
+        <ul class="contact-text">
+            <li class="ct-one">Contacts!</li>
+            <li>This is my contacts, just send me messages!</li>
+        </ul>
+        <button class="contact-btn"><a href="https://github.com/tikoanthony">Click Here!</a></button>
+    </div>
+    <!-- Contacts end -->
+
+    <!-- Footer -->
+    <div class="footer-container">
+        Copyright © TikoAnthony 2023
+    </div>
+    <!-- Footer end -->
 </body>
 </html>
